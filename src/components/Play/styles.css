@@ -133,7 +133,7 @@
 
 @media (max-width: 1100px) {
     .questions {
-        max-width: 350px;
+        max-width: 300px;
         min-height: 70px;
     }
     .quest {
