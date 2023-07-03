@@ -1,0 +1,19 @@
+.divFinishPage {
+    font-family: Neucha, sans-serif;
+    margin-bottom: 20px;
+}
+.containerFinishResult {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 25px;
+}
+
+@media (max-width: 1100px) {
+    .divFinishPage {
+        color: #f1d99f;
+        margin-bottom: 15px;
+    }
+}

@@ -1,0 +1,165 @@
+.logoContainer {
+    /*background: #41403e;*/
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* That all for play container */
+.playContainer {
+    /*background: rosybrown;*/
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.quest {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+}
+.answer {
+    height: 150px;
+    width: 500px;
+}
+.answer1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+.finish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+}
+.questions {
+    overflow: hidden;
+    background: #f1d99f;
+    width:500px;
+    height: 50px;
+    border-radius: 15px;
+    word-wrap: break-word;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: #41403e solid 3px;
+    font-family: Neucha, sans-serif;
+
+}
+
+
+.numQuestion {
+    font-family: Neucha, sans-serif;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 345px;
+}
+.category {
+    font-family: Neucha, sans-serif;
+    position: fixed;
+    top: 300px;
+}
+
+.buttonAnswer {
+    align-self: center;
+    overflow: hidden;
+    max-width: 130px;
+    background-color: white;
+    background-image: none;
+    background-position: 0 90%;
+    background-repeat: repeat no-repeat;
+    background-size: 4px 3px;
+    border-radius: 15px 225px 255px 15px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    color: #41403e;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Neucha, sans-serif;
+    font-size: 1rem;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 235ms ease-in-out;
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.buttonAnswer:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+    background-color: #f1d99f;
+}
+
+.buttonAnswer:focus {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+
+
+
+/* That all for exit container */
+.exitContainer {
+    /*background: darkolivegreen;*/
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.exitDiv {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+@media (max-width: 1100px) {
+    .questions {
+        max-width: 400px;
+        min-height: 70px;
+    }
+    .quest {
+        top: 10px;
+    }
+    .numQuestion {
+        position: relative;
+        top: 9px;
+        color: #f1d99f;
+    }
+    .category {
+        top: 200px;
+        color: #f1d99f;
+    }
+    .answer {
+        width: 300px;
+    }
+    .answer1 {
+        flex-direction: column;
+    }
+    .buttonAnswer {
+        display: flex;
+        min-width: 300px;
+        max-height: 40px;
+        margin: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+}
