@@ -13,7 +13,6 @@ const Home: FC = () => {
     const {category} = useAppSelector(state => state.categoryReducer);
     const dispatch = useAppDispatch();
     const navigate = useNavigate();
-    const sads = 1;
 
     useEffect(()=> {
      dispatch(categoryAction.getAll())
