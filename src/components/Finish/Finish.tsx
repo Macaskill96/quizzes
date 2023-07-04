@@ -26,7 +26,7 @@ const Finish = () => {
                    <div className='divFinishPage'>Your result: {result}</div>
                    <div className='divFinishPage'>Points: {result}</div>
                    <div className='divFinishPage'>Your time: {yourTime}</div>
-                   <div className='divFinishPage'>Correct answer (%): {percent}%</div>
+                   <div className='divFinishPage'>Correct answer: {percent}%</div>
                    <div>
                        <button className='buttonAnswer modified-buttonAnswer' onClick={again}>Try again</button>
                    </div>

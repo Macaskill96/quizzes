@@ -18,18 +18,15 @@ const Statistics = () => {
     const minutes = Math.floor(averageTime / 1000 / 60);
     const resultTime = `${minutes} min ${seconds} sec`;
 
-    const incorrect = parseInt(localStorage.getItem('incorrectResult') || '0');
+    const incorrect = parseInt(localStorage.getItem('totalIncorrect') || '0');
     const correct = parseInt(localStorage.getItem('totalResult') || '0');
 
-    const maxResult = Math.max(incorrect, correct);
-    const incorrectAngle = (incorrect / maxResult) * 360;
-    const correctAngle = (correct / maxResult) * 360;
 
     const data = {
         labels: ['Incorrect', 'Correct'],
         datasets: [
             {
-                data: [incorrectAngle, correctAngle],
+                data: [incorrect, correct],
                 backgroundColor: ['#FF6384', '#36A2EB'],
                 hoverBackgroundColor: ['#FF6384', '#36A2EB'],
             },

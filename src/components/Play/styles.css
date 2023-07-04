@@ -22,7 +22,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    top: 100px;
+    top: 80px;
 }
 .answer {
     height: 150px;
@@ -60,13 +60,13 @@
 .numQuestion {
     font-family: Neucha, sans-serif;
     margin-bottom: 10px;
-    position: fixed;
-    top: 345px;
+    position: relative;
+    top: 70px;
 }
 .category {
     font-family: Neucha, sans-serif;
-    position: fixed;
-    top: 300px;
+    position: relative;
+    top: 50px;
 }
 
 .buttonAnswer {
@@ -145,7 +145,7 @@
         color: #f1d99f;
     }
     .category {
-        top: 200px;
+        top: -10px;
         color: #f1d99f;
     }
     .answer {
@@ -161,5 +161,30 @@
         margin: 5px;
         align-items: center;
         justify-content: center;
+
+    }
+    .buttonAnswer:hover {
+        background-color: white;
+        box-shadow: none;
+        transform: revert;
+    }
+}
+
+@media (max-height: 650px) {
+    .questions {
+        min-height: 50px;
+        font-size: 13px;
+    }
+    .buttonAnswer {
+        min-width: 280px;
+        max-height: 25px;
+        font-size: 13px;
+    }
+    .quest {
+        top: 40px;
+    }
+    .numQuestion {
+        top: 40px;
+        position: relative;
     }
 }
